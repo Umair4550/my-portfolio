@@ -6,7 +6,7 @@ export default function Hero() {
   const downloadCV = () => {
     // Create a temporary anchor element
     const link = document.createElement('a');
-    link.href = '/M Umair latest cv.pdf';
+    link.href = 'public\M Umair latest cv.pdf';
     link.download = 'Muhammad_Umair_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -37,7 +37,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-900 via-indigo-700 to-purple-800 text-white overflow-hidden" id="home">
+    <section className="relative flex place-items-center justify-between min-h-screen bg-gradient-to-br from-indigo-900 via-indigo-700 to-purple-800 text-white overflow-hidden" id="home">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+CiAgPHBhdGggZD0iTTAgMGg2MHY2MEgweiIgZmlsbD0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjMwIiBjeT0iMzAiIHI9IjEiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIi8+Cjwvc3ZnPg==')] opacity-10"></div>
@@ -47,15 +47,10 @@ export default function Hero() {
       
       </div>
       
-      <div className="relative container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <div className="relative container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
         {/* Text Content */}
         <div className="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
-          <div className="inline-block px-3 py-1 mb-6 text-sm bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-            <span className="flex items-center">
-              <span className="flex w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-              Available for new projects
-            </span>
-          </div>
+         
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-500">Muhammad Umair</span> 👋
@@ -126,15 +121,7 @@ export default function Hero() {
             <div className="absolute -top-4 -right-4 w-28 h-28 bg-amber-400/20 rounded-full floating-element"></div>
             <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-purple-400/20 rounded-full floating-element" style={{animationDelay: '0.5s'}}></div>
             
-            {/* Floating tech badges with animation */}
-            <div className="absolute -top-6 -left-6 bg-white/10 backdrop-blur-sm p-3 rounded-xl shadow-lg border border-white/20 floating-element" style={{animationDelay: '1s'}}>
-              <div className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-amber-400" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </div>
-            </div>
-            
+           
             <div className="absolute -bottom-6 -right-6 bg-white/10 backdrop-blur-sm p-3 rounded-xl shadow-lg border border-white/20 floating-element" style={{animationDelay: '1.5s'}}>
               <div className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-400" viewBox="0 0 20 20" fill="currentColor">
